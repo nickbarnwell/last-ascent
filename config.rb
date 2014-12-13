@@ -50,10 +50,10 @@ require 'stamp'
 #   end
 # end
 
+sprockets.append_path 'tws_stylesheets'
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
-
 
 set :images_dir, 'images'
 
@@ -125,6 +125,10 @@ activate :s3_sync do |s3|
   s3.bucket = ''
   s3.region = 'us-east-1'
   s3.after_build = false
+end
+
+configure :development do
+  set :debug_assets, true
 end
 
 activate :directory_indexes
