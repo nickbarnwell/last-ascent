@@ -11,11 +11,10 @@
 /build
 
 # Ignore Sass' cache
-/.sass-cache
+*/.sass-cache
 
 # Ignore .DS_store file
 .DS_Store
 
 # Ignore tmp (for Heroku)
 /tmp
-*/lament/*

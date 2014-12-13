@@ -1,12 +1,16 @@
-- content_for :assets do
-  = stylesheet_link_tag "index"
-
 = partial 'partials/header'
 
-.making-tws.full-width-image
-  %img{src: "https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10641151_10202896492037628_7102811922428752232_n.jpg?oh=612a45a2c80d2ec667336387fdcbc007&oe=554294B7"}
-  .overlay
-  .copy
-    %h1 We Make Tea With Strangers
+.making-tws
+  .container
+    .content
+      .content-box
+        %h1.cover-photo-lede Making the world feel smaller,<br/>six cups of tea at a time
+        %p.cover-photo-body
+          Tea time is a conversation fueled by the stories, questions, and
+          listening of a few strangers and a super host. 
+        %p.cover-photo-body We're the people who connect them.
+        %button.green.cover-photo-cta
+          Learn More
+
 
 = partial 'partials/footer'
