@@ -1,0 +1,26 @@
+---
+pageable: false
+per_page: 10
+---
+- page_articles.each do |article|
+  %article.post
+    %hgroup.info
+      %h1= link_to article.title, article
+      %p.date= article.date.stamp("5. September 2013")
+      /= article.tags.map {|t| link_to t, tag_path(t)}.join ', '
+    .summary
+      = article.summary
+      - if article.summary != article.body
+        = link_to 'read more', article, :class => 'more'
+
+- if paginate && num_pages > 1
+  %nav.pagination
+    - if prev_page
+      = link_to 'previous', prev_page, :class => 'page-control prev'
+    - else
+      = link_to 'previous', '#', :class => 'page-control prev disabled'
+    %span.pager= "#{page_number} of #{num_pages}"
+    - if next_page
+      = link_to 'next', next_page, :class => 'page-control next'
+    - else
+      = link_to 'next', '#', :class => 'page-control next disabled'

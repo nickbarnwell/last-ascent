@@ -1,0 +1,6 @@
+- wrap_layout :layout do
+  - content_for :assets do
+    = stylesheet_link_tag "blog"
+  =partial :header, locals: {title: 'nota bene', header_columns: 'offset-by-two twelve'}
+  #content{role: "main"}
+    = yield
