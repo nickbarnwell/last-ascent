@@ -1,0 +1,18 @@
+.making-tws {
+  @include cover-photo(image-url('tea-table-vertical.jpg'), image-url('tea-table-horizontal.jpg'));
+
+  .content {
+    @extend %vertical-center-flex-container;
+
+    @include padding(50px 0);
+
+    @include media($tablet) {
+      @include padding(100px 0);
+    }
+  }
+
+  .content-box {
+    @extend %vertical-center-box;
+    text-align: center;
+  }
+}

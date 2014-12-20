@@ -4,13 +4,32 @@
   .container
     .content
       .content-box
-        %h1.cover-photo-lede Making the world feel smaller,<br/>six cups of tea at a time
+        %h1.cover-photo-lede
+          Making the world feel smaller,<br/>six cups of tea at a time
         %p.cover-photo-body
           Tea time is a conversation fueled by the stories, questions, and
           listening of a few strangers and a super host. 
         %p.cover-photo-body We're the people who connect them.
         %button.green.cover-photo-cta
-          Learn More
+          =link_to 'Learn More', '/about'
+.about
+  .container
+    %h1.copy-section-header What We're About
+    %section.copy-section
+      - (1..3).each do |x|
+        %p= lorem.paragraph
+    .copy-section-bottom-divider
 
+.contributing
+  .container
+    %h1.copy-section-header How Do I Help?
+    %section.copy-section
+      - (1..5).each do |x|
+        %p 
+          -if x % 2 == 0
+            = lorem.paragraph << lorem.paragraph
+          -else
+            = lorem.paragraph
+    .copy-section-bottom-divider
 
 = partial 'partials/footer'
