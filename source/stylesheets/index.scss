@@ -16,3 +16,56 @@
     text-align: center;
   }
 }
+
+
+.team-member {
+  margin: 1em 0;
+  list-style-type: none;
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  /* When we have >2 contributors uncomment this
+  * @include media($desktop) {
+  *   @include span-columns(4);
+  *   @include omega(3n);
+  * }
+  */
+
+  img {
+    margin: 0 auto 10px;
+    display: block;
+    width: 65%;
+    @include prefixer(border-radius, 50%, webkit moz ms o spec);
+  }
+
+  .name {
+    font-weight: 400;
+    line-height: 1;
+  }
+  .title {
+    color: $light-gray;
+    line-height: 1;
+  }
+
+  .description {
+    margin-top: 0.75em;
+  }
+
+  .personal-info {
+    a {
+      line-height: 1;
+      color: $medium-gray;
+
+      &:after {
+        content: " //";
+      }
+
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
