@@ -1,32 +1,28 @@
 --- 
 - name: "Ankit"
   avatar: "team/ankit.jpg"
-  title: "Ankit Show Host //&nbsp;Founder"
-  tagline: "I'M SO EXCITED ABOUT THIS!!"
+  title: "Host of Hosts //&nbsp;Founder"
   story: 
     |
-      Are all the guys in here… you know? George Sr.: No not all of
-      them. Barry: Yeah. It's never the ones you hope. A trick is something a whore
-      does for money…or candy. … or cocaine. We have unlimited juice? This party is
-      going to be off the hook. And THAT'S why you always leave a note. What about
-      macaroni – let me finish – salad? Even though so many people in this office
-      are begging for it. Here he comes. Here comes John Wayne.
+      I talk to anyone and everyone in the Tea With Strangers community to learn
+      how we can create a smaller and more open world. These conversations feed
+      the design of the site, the words in our emails, the stories we tell, the
+      systems that drive our community&lsquo;s growth, and all of my existential
+      crises.
   twitter: "AnkitShah"
   email: "ankit@teawithstrangers.com"
   site: "byankit.com"
 
 - name: "Nick"
   avatar: "team/nb.jpg"
-  title: "Coffee Enthusiast //&nbsp;&ldquo;Lead&rdquo; Engineer"
-  tagline: "This is not even remotely exciting."
+  title: "Reality Check // The Engineering Department"
   story: 
     |
       I coordinate development (and anything else involving 1s and 0s).  My
-      focus is making it easy  to contribute to Tea With Strangers, whether
-      you're an attendee, a host, a potential contributor, or something else
-      entirely. If you have feedback on how we can improve, I'd love to hear it!
-      On weekends, you can find me hosting tea times in Seattle (and working on
-      TWS in between).
+      focus is making it easy to contribute to Tea With Strangers, whether
+      you&rsquo;re an attendee, host, or potential contributor.  On weekends,
+      you can find me hosting tea times in Seattle (and working on TWS in
+      between).
       
   twitter: "nickbarnwell"
   email: "nb@ul.io"
@@ -34,7 +30,6 @@
 - name: "You?"
   avatar: "team/you.png"
   title: "TWS Enthusiast"
-  tagline: "This is not even remotely exciting."
   story: 
     |
       Want to help make TWS awesome? We'd love to have you! Check out our <a
