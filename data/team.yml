@@ -34,12 +34,12 @@
 
 - name: "Mehul"
   avatar: "team/mehul.png"
-  title: "seriousProfessional"
+  title: "Serious Professional"
   tagline: "What year is it"
   story:
     |
       I tweet at Ankit sometimes and sometimes help Nick write
-      some code. I don't love tea (I think it's pretty good),
+      some code. I don&rsquo;t love tea (I think it&rsquo;s pretty good),
       but I love the idea of tea. Also, you can&rsquo;t spell team
       without tea. I just thought of that.
 
