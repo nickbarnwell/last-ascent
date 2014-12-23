@@ -38,6 +38,7 @@
     margin: 0 auto 10px;
     display: block;
     width: 65%;
+    max-height: 336px;
     @include prefixer(border-radius, 50%, webkit moz ms o spec);
   }
 
