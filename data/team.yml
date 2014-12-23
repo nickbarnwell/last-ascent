@@ -43,6 +43,21 @@
   email: "mehul.kar@gmail.com"
   site: "mehulkar.com"
 
+- name: "Raven"
+  avatar: "team/raven.jpg"
+  title: "Thought Leader"
+  tagline: "I'll get to this eventually"
+  story:
+    |
+      I am a senior at Stanford majoring in Computer Science. I grew up in the
+      bustling city of Singapore but have since grown fond of laid-back
+      Californian life. The pinnacle of human civilization is being able to show
+      up to work in T-shirt and sandals. I also enjoy living in the future.
+
+  twitter: "DarkMirage"
+  email: "raven@cs.stanford.edu"
+  site: "soraven.com"
+
 - name: "You?"
   avatar: "team/you.png"
   title: "TWS Enthusiast"
