@@ -1,9 +1,9 @@
---- 
+---
 - name: "Ankit"
   avatar: "team/ankit.jpg"
   title: "Ankit Show Host //&nbsp;Founder"
   tagline: "I'M SO EXCITED ABOUT THIS!!"
-  story: 
+  story:
     |
       Are all the guys in here… you know? George Sr.: No not all of
       them. Barry: Yeah. It's never the ones you hope. A trick is something a whore
@@ -19,7 +19,7 @@
   avatar: "team/nb.jpg"
   title: "Coffee Enthusiast //&nbsp;&ldquo;Lead&rdquo; Engineer"
   tagline: "This is not even remotely exciting."
-  story: 
+  story:
     |
       I coordinate development (and anything else involving 1s and 0s).  My
       focus is making it easy  to contribute to Tea With Strangers, whether
@@ -27,20 +27,36 @@
       entirely. If you have feedback on how we can improve, I'd love to hear it!
       On weekends, you can find me hosting tea times in Seattle (and working on
       TWS in between).
-      
+
   twitter: "nickbarnwell"
   email: "nb@ul.io"
   site: "ul.io"
+
+- name: "Mehul"
+  avatar: "team/mehul.png"
+  title: "seriousProfessional"
+  tagline: "What year is it"
+  story:
+    |
+      I tweet at Ankit sometimes and sometimes help Nick write
+      some code. I don't love tea (I think it's pretty good),
+      but I love the idea of tea. Also, you can&rsquo;t spell team
+      without tea. I just thought of that.
+
+  twitter: "mehulkar"
+  email: "mehul.kar@gmail.com"
+  site: "mehulkar.com"
+
 - name: "You?"
   avatar: "team/you.png"
   title: "TWS Enthusiast"
   tagline: "This is not even remotely exciting."
-  story: 
+  story:
     |
       Want to help make TWS awesome? We'd love to have you! Check out our <a
       href="/contributing">guide to contributing</a> or send Nick an email to
       get started.
-      
+
   twitter: "whoknows"
   email: "contribute@teawithstrangers.com"
   site: "github.com/teawithstrangers"
