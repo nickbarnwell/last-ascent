@@ -1,8 +1,8 @@
 %header
-  .container{onclick: 'toggleHeader()'}
-    /%img.tws-logo / Placeholder
-    %h4.tws-logo-type
-      Tea With Strangers
+  .container
+    %h4
+      =link_to "Tea With Strangers", '/', class: 'tws-logo-type'
+      %span.menu-expando{onclick: 'toggleHeader()'}
     %nav.nav-list
       %ul.nav-links
         %li.nav-link-item
