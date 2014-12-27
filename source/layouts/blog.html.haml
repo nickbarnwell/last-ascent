@@ -1,4 +1,4 @@
-- wrap_layout :layout do
-  = partial :header, locals: {title: 'Making TWS'}
+= wrap_layout :layout do
+  = partial 'partials/header', locals: {title: 'Making TWS'}
   = yield
-  = partial :footer
+  = partial 'partials/footer'

@@ -1,2 +1,12 @@
-- wrap_layout :blog do
-  = yield
+= wrap_layout :blog do
+  .container
+    %article.post
+      %h1.post-title= link_to current_page.title, current_page
+      %hgroup.post-info
+        .post-metadata
+          %ul.post-tags
+            - current_page.tags.map do |t| 
+              %li.post-tag= link_to t, tag_path(t)
+          %p.post-date= current_page.date.stamp("5. September 2013")
+      .post-summary.post-body
+        = yield
