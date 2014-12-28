@@ -1,0 +1,80 @@
+= partial 'partials/header', locals: {title: "TWS Typography"}
+
+.container
+  .copy-section
+    %h2.label Introduction
+    :markdown
+      As with everything at Tea With Strangers, our typographic system is designed
+      first for mobile devices and then scaled up to suit all manner of larger
+      displays. Refer to `typography.scss` for styling of basic elements such as
+      `<p>`, `<h1>…<h6>`, and `<a>`; `enhanced-typography.scss` for dropcaps,
+      section headers, pull quotes, &amp;c.; and `variables.scss` for brand
+      colours, line height configuration, and other fundamentals used throughout
+      the site.  These are found in the [`tws-styles`
+      Repository](https://github.com/TeaWithStrangers/tws-styles) that is shared
+      across all TWS applications and properties.
+
+    %h2.label Text Elements
+    %h1 Heading One
+    %h2 Heading Two
+    %h3 Heading Three
+    %h4 Fourth Heading
+    %h5 Fifth Heading
+
+    %p.intro
+      An introductory paragraph is a great way to summarise the content before the
+      reader really digs into the detail of your story. With an <code>.intro</code> class
+      attached, this special paragraph can have a unique text size while
+      inheriting its other attributes from its parent.
+    %p.intro-paragraph
+      There are dozens of simple, fascinating experiments that may be performed
+      with this kind of electricity.
+    %p
+      <span class="dropcap">D</span>id you ever succeed in proving to the
+      pussy-cat that something unusual occurs when you thoroughly rub his warm fur
+      with your hand? Did you notice the bright sparks that passed to your hand
+      when it was held just above the cat's back? You should be able to see, hear,
+      and feel these sparks, especially when the air is dry and you are in a dark
+      room.
+    %blockquote.pull-quote
+      %p.quote
+        “You should be able to see, hear, and feel these sparks, especially when the air is dry and you are in a dark room.”
+    %p
+      Did you ever heat a piece of paper before the fire until it was real hot,
+      then lay it upon the table and rub it from end to end with your hand, and
+      finally see it cling to the wall? Were you ever in a factory where there
+      were large belts running rapidly over pulleys or wheels, and where large
+      sparks would jump to your hands when held near the belts?
+    %h2.label Lists &amp; Navigation
+    %ul
+      %li The first item in an unordered list
+      %li I'm the second item
+      %li And I'm the third item in this list
+    %ol
+      %li Item #1 of three
+      %li The second place item
+      %li Last but not least in ordered list
+
+    / Navigation List (Open)
+    %nav.nav-list.open
+      %ul.nav-links
+        %li.nav-link-item
+          = link_to 'First Item in a Nav Menu', '#'
+        %li.nav-link-item
+          = link_to 'Item', '#'
+        %li.nav-link-item
+          = link_to 'Longer Item', '#'
+        %li.nav-link-item
+          = link_to 'Onomatopoeia', '#'
+    %h2.label Image Formats
+    %h3 Not Yet Implemented
+
+    %p.label The Gory Technical Details
+    :markdown
+      All content sits within a `.container`. This mixes in Bourbon's
+      [`outer-container()`](http://thoughtbot.github.io/neat-docs/latest/#outer-container)
+      with the default width. It includes an additional `1em` of horizontal padding.
+
+      This is fine
+
+      The `$base-line-height` for most text is `1.5`. For headers, it is `1.25`.
