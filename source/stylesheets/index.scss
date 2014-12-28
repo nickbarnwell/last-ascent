@@ -22,23 +22,22 @@
   margin: 1em 0;
   list-style-type: none;
 
-  @include media($tablet) {
+  @include media($tablet-only) {
     @include span-columns(6);
     @include omega(2n);
   }
 
-  /* When we have >2 contributors uncomment this
-  * @include media($desktop) {
-  *   @include span-columns(4);
-  *   @include omega(3n);
-  * }
-  */
+  @include media($desktop) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
 
   img {
     margin: 0 auto 10px;
     display: block;
-    width: 65%;
-    max-height: 336px;
+    width: 50%;
+    max-height: 329px;
     @include prefixer(border-radius, 50%, webkit moz ms o spec);
   }
 
