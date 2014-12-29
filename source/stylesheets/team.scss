@@ -2,16 +2,10 @@
   margin: 1em 0;
   list-style-type: none;
 
-  @include media($tablet-only) {
+  @include media($tablet) {
     @include span-columns(6);
     @include omega(2n);
   }
-
-  @include media($desktop) {
-    @include span-columns(4);
-    @include omega(3n);
-  }
-
 
   img {
     margin: 0 auto 10px;
