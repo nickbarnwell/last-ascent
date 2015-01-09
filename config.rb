@@ -95,7 +95,7 @@ activate :blog do |blog|
 end
 
 # Build-specific configuration
-set :build_dir, 'tmp'
+set :build_dir, 'build'
 
 configure :build do
   # For example, change the Compass output style for deployment
@@ -109,6 +109,7 @@ configure :build do
   
   # Use relative URLs
   activate :relative_assets
+  activate :asset_hash
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
@@ -120,11 +121,18 @@ configure :build do
 end
 
 activate :s3_sync do |s3|
-  s3.aws_access_key_id = ''
-  s3.aws_secret_access_key = ''
-  s3.bucket = ''
+  s3.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  s3.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+  s3.bucket = 'making.teawithstrangers.com'
   s3.region = 'us-east-1'
   s3.after_build = false
+end
+
+activate :cloudfront do |config|
+  config.access_key_id      = ENV['AWS_ACCESS_KEY_ID']
+  config.secret_access_key  = ENV['AWS_SECRET_ACCESS_KEY']
+  config.distribution_id    = 'E46X18843ZI7J'
+  config.after_build        = false
 end
 
 configure :development do
