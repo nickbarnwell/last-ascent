@@ -9,10 +9,11 @@
           %br
 .container
   %section.copy-section
-    %h1.copy-section-header Who Are We?
-    - (1..3).each do |x|
-      %p= lorem.paragraph
-  .copy-section-bottom-divider
+    %h2.copy-section-header Who Are We?
+    :markdown
+      Curious who's behind the curtain at Tea With Strangers? It's us. We're on
+      a mission to make the world smaller, a few cups of tea at a time. [Join
+      us](http://teawithstrangers.com).
 
 .team
   .container
@@ -28,5 +29,3 @@
           = link_to "@#{m[:twitter]}", "https://twitter.com/#{m[:twitter]}", class: 'twitter'
           = link_to "#{m[:email]}", "mailto:#{m[:email]}", class: 'email'
           = link_to "#{m[:site]}", "#{m[:site]}", class: 'site'
-
-= partial 'partials/footer'
