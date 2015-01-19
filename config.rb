@@ -98,17 +98,23 @@ end
 set :build_dir, 'tmp'
 
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-  
-  # Minify Javascript on build
-  # activate :minify_javascript
-  
+  # Minify static content
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
+
+  # Optimise Images
+  activate :imageoptim
+
   # Enable cache buster
   # activate :cache_buster
   
-  # Use relative URLs
-  activate :relative_assets
+  # Don't use relative URLs
+  #activate :relative_assets
+  activate :asset_hash
+
+  # GZIP JS and CSS
+  activate :gzip
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
@@ -120,11 +126,21 @@ configure :build do
 end
 
 activate :s3_sync do |s3|
-  s3.aws_access_key_id = ''
-  s3.aws_secret_access_key = ''
-  s3.bucket = ''
+  s3.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  s3.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+  s3.bucket = 'making.teawithstrangers.com'
   s3.region = 'us-east-1'
   s3.after_build = false
+end
+
+default_caching_policy max_age:(60 * 60 * 24 * 365)
+caching_policy 'text/html', max_age: 0, must_revalidate: true
+
+activate :cloudfront do |config|
+  config.access_key_id      = ENV['AWS_ACCESS_KEY_ID']
+  config.secret_access_key  = ENV['AWS_SECRET_ACCESS_KEY']
+  config.distribution_id    = 'E46X18843ZI7J'
+  config.after_build        = false
 end
 
 configure :development do

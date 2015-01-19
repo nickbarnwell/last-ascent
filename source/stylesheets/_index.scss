@@ -1,0 +1,7 @@
+.making-tws {
+  @include cover-photo(image-url('tea-table-vertical.jpg'), image-url('tea-table-horizontal.jpg'));
+}
+
+.team-tws {
+  @include cover-photo(image-url('faces-splash-horizontal.jpg'));
+}

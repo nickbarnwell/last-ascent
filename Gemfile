@@ -7,6 +7,11 @@ gem 'middleman-blog', '~> 3.5'
 gem 'middleman-s3_sync'
 gem 'middleman-livereload'
 
+# Asset Optimisation and Deployment Gems
+gem 'middleman-cloudfront'
+gem 'middleman-minify-html'
+gem 'middleman-imageoptim'
+
 gem 'sass', '~> 3.4'
 
 # For feed.xml.builder
