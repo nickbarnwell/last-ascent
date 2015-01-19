@@ -9,14 +9,14 @@
         Tea time is a conversation fueled by the stories, questions, and
         listening of a few strangers and a super host.
       %p.cover-photo-body We make it possible.
-      %button.green.cover-photo-cta
-        =link_to 'Learn More', '/about'
+      %a{href: '/contributing'}
+        %button.green.cover-photo-cta
+          Learn More
 .about
   .container
     %section.copy-section
       %h3.copy-section-header What We&rsquo;re About
       :markdown
-
         We’re on a mission to make our world smaller. Our neighborhoods more
         neighborly. Our friends more friendly. Our communities more communal.
         Our humans more human. We’re all about how we can bring people together
@@ -44,12 +44,6 @@
   .container
     %section.copy-section
       %h3.copy-section-header That&rsquo;s awesome! How do I help?
-      - (1..5).each do |x|
-        %p
-          -if x % 2 == 0
-            = lorem.paragraph << lorem.paragraph
-          -else
-            = lorem.paragraph
-    .copy-section-bottom-divider
-
-= partial 'partials/footer'
+      :markdown
+        Check out our [Contributor's Guide](/contributing) to learn more about
+        how you can contribute to Tea With Strangers.
