@@ -5,8 +5,12 @@ source 'https://rubygems.org'
 gem 'middleman', '~> 3.3'
 gem 'middleman-blog', '~> 3.5'
 gem 'middleman-s3_sync'
-gem 'middleman-cloudfront'
 gem 'middleman-livereload'
+
+# Asset Optimisation and Deployment Gems
+gem 'middleman-cloudfront'
+gem 'middleman-minify-html'
+gem 'middleman-imageoptim'
 
 gem 'sass', '~> 3.4'
 
