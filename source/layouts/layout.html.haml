@@ -26,4 +26,7 @@
 
   %link{rel:"shortcut icon", href:"/favicon.png"}
 %body{class: page_classes}
-  = yield
+  .wrapper
+    .wrapper-content
+      = yield
+    = partial 'partials/footer'
