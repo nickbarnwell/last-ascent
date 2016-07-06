@@ -128,9 +128,9 @@ end
 activate :s3_sync do |s3|
   s3.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   s3.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-  s3.bucket = 'making.teawithstrangers.com'
+  s3.bucket = 'www.lastascent.com'
   s3.region = 'us-east-1'
-  s3.after_build = false
+  s3.after_build = true
 end
 
 default_caching_policy max_age:(60 * 60 * 24 * 365)
@@ -139,8 +139,8 @@ caching_policy 'text/html', max_age: 0, must_revalidate: true
 activate :cloudfront do |config|
   config.access_key_id      = ENV['AWS_ACCESS_KEY_ID']
   config.secret_access_key  = ENV['AWS_SECRET_ACCESS_KEY']
-  config.distribution_id    = 'E46X18843ZI7J'
-  config.after_build        = false
+  config.distribution_id    = 'E10P6XULRJMW57'
+  config.after_build        = true
 end
 
 configure :development do
