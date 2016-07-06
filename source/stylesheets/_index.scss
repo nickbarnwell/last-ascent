@@ -1,8 +1,30 @@
-.last-ascent {
-  @include cover-photo(image-url('tea-table-vertical.jpg'), image-url('tea-table-horizontal.jpg'));
+.last-ascent-landing {
+  @include cover-photo(image-url('sherman_crater_full.jpg'));
+  @include media($tablet) {
+    background-position: 50% 50%, 50% 50%;
+  }
+  @include media($tablet) {
+    min-height: 550px;
+  }
+
+  .content {
+    @include media($tablet) {
+      @include span-columns(8);
+      @include shift(1);
+    }
+
+    @include media($desktop) {
+      @include span-columns(5);
+      @include shift(2);
+    }
+  }
 }
 
 .last-ascent-team {
   //TODO: have a team page for LA
   @include cover-photo(image-url('TBD'));
+}
+
+.latest-post {
+  margin-bottom: 2em;
 }

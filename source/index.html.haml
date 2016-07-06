@@ -1,49 +1,30 @@
 = partial 'partials/header'
 
-.last-ascent.cover-photo
-  .content
-    .content-box
-      %h3.cover-photo-lede
-        Make the world smaller,<br/>6 cups of tea at a time.
+.last-ascent-landing.cover-photo
+  .container
+    .content
+      %h3.cover-photo-lede An Average Climber's Log
       %p.cover-photo-body
-        Tea time is a conversation fueled by the stories, questions, and
-        listening of a few strangers and a super host.
-      %p.cover-photo-body We make it possible.
-      %a{href: '/contributing'}
-        %button.green.cover-photo-cta
-          Learn More
-.about
-  .container
-    %section.copy-section
-      %h3.copy-section-header What We&rsquo;re About
-      :markdown
-        We’re on a mission to make our world smaller. Our neighborhoods more
-        neighborly. Our friends more friendly. Our communities more communal.
-        Our humans more human. We’re all about how we can bring people together
-        to inspire real connection, founded first on how we express and share
-        curiosity, empathy and generosity with one another. We know that when we
-        focus on having each others’ backs instead of worrying about who has our
-        back, we all get exactly what we need. Probably more.
+        A first ascent may forever escape one's grasp. Fortunately, you can
+        always endeavour to have been the <i>last</i> to stand atop a peak.
+      %p.cover-photo-body
+        This is the chronicle of one moderately incompent climber's attempts to
+        earn the fleeting glory of these "Last Ascents", if only for a moment.
+      %a{href: "/log"}
+        %button.blue.cover-photo-cta
+          I'm Interested
 
-        What we’re doing here with Tea With Strangers isn’t groundbreaking. Tea
-        time doesn’t leave you feeling like everything in your life is
-        different, but it does leave you with a fresh dose of perspective and
-        understanding. And it fits into a normal, busy person’s schedule, like
-        going to the gym. One workout won’t give you a six-pack, but regularity
-        helps. TWS is all about making opportunities for understanding and
-        connection as available as the gym.
+.container.latest-post
+  %section.copy-section
+    - if blog.articles.first 
+      = partial "partials/article", locals: {article: blog.articles.first, classes: ""} 
+    - else
+      %p Nothing to see here
 
-        Being reflective, appreciating the people around you, and getting out of
-        the echo chambers of our day-to-day lives shouldn’t require you to
-        backpack somewhere across the world on some journey to enlightenment.
-        It’s available all around you if you just travel in your own home.
-
-    .copy-section-bottom-divider
-
-.contributing
-  .container
-    %section.copy-section
-      %h3.copy-section-header That&rsquo;s awesome! How do I help?
-      :markdown
-        Check out our [Contributor's Guide](/contributing) to learn more about
-        how you can contribute to Tea With Strangers.
+/.about
+/  .container
+/    %section.copy-section
+/      %h3.copy-section-header
+/        Why?
+/      :markdown
+/        Test
