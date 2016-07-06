@@ -74,7 +74,7 @@ set :markdown_engine, :redcarpet
 # page "/feed.xml", :proxy => "/blog/feed.xml", :layout => false
 
 activate :blog do |blog|
-  blog.prefix = "blog"
+  blog.prefix = "log"
   # blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = "posts/:year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
@@ -86,8 +86,8 @@ activate :blog do |blog|
   # blog.day_link = ":year/:month/:day.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
+  blog.tag_template = "log/tag.html"
+  blog.calendar_template = "log/calendar.html"
 
   # blog.paginate = true
   # blog.per_page = 10
