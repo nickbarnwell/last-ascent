@@ -1,0 +1,11 @@
+.instagram {
+  margin: 1em auto;
+  display: block;
+
+  &.small {
+    width: 450px;
+  }
+
+  border: 10px solid $dark-gray;
+  padding: 15px;
+}

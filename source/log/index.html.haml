@@ -4,19 +4,7 @@ layout: blog
 ---
 .container.post-listing
   - page_articles.each do |article|
-    %article.post
-      %h2.post-title= link_to article.title, article
-      %hgroup.post-info
-        .post-metadata
-          %ul.post-tags
-            - article.tags.map do |t|
-              %li.post-tag= link_to t, tag_path(t)
-          %p.post-date= article.date.stamp("5. September 2013")
-      .post-summary.post-body
-        = article.summary
-        - if article.summary != article.body
-          = link_to 'Read On&hellip;', article, :class => 'post-read-more'
-
+    = partial "partials/article", locals: {article: article}
   - if paginate && num_pages > 1
     %nav.pagination.post
       - if prev_page

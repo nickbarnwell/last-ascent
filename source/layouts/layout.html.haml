@@ -6,7 +6,10 @@
 %head
   %meta{charset: "utf-8"}
   %title
-    = current_page.data.title || "making Tea With Strangers."
+    - if current_page.data.title
+      ="#{current_page.data.title} - Last Ascent"
+    -else
+      Last Ascent
   %meta{name:"description", content: "The stories of the designers and engineers behind Tea With Strangers"}
   %meta{name:"author", content:"Brewers"}
   %meta{name:"viewport", content:"width=device-width, initial-scale=1, maximum-scale=1"}
