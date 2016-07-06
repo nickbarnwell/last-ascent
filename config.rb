@@ -95,7 +95,7 @@ activate :blog do |blog|
 end
 
 # Build-specific configuration
-set :build_dir, 'tmp'
+set :build_dir, 'build'
 
 configure :build do
   # Minify static content
