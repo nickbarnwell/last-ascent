@@ -14,8 +14,8 @@
         %button.blue.cover-photo-cta
           I'm Interested
 
-.container.latest-post
-  %section.copy-section
+.container
+  %section.copy-section.latest-post
     - if blog.articles.first 
       = partial "partials/article", locals: {article: blog.articles.first, classes: ""} 
     - else
