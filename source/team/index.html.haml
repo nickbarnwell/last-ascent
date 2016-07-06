@@ -1,6 +1,6 @@
 = partial 'partials/header'
 
-.team-tws.cover-photo
+.team-la.cover-photo
   .container
     .content
       .content-box
@@ -20,7 +20,7 @@
     - data.team.each do |m|
       %li.team-member
         %img{src: image_path(m[:avatar])}
-        .tws-info
+        .la-info
           %h2.name= m[:name]
           %h5.title= m[:title]
           /%p.tagline= m[:tagline]
