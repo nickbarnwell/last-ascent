@@ -50,7 +50,7 @@ require 'stamp'
 #   end
 # end
 
-sprockets.append_path 'tws_stylesheets'
+sprockets.append_path 'last_ascent_styles'
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
