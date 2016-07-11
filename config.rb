@@ -70,8 +70,8 @@ set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
 set :markdown_engine, :redcarpet
 
 # page "/blog/", :layout => :blog
-# page "/blog/feed.xml", :layout => false
-# page "/feed.xml", :proxy => "/blog/feed.xml", :layout => false
+page "/log/feed.xml", :layout => false
+page "/feed.xml", :proxy => "/log/feed.xml", :layout => false
 
 activate :blog do |blog|
   blog.prefix = "log"
@@ -104,7 +104,10 @@ configure :build do
   activate :minify_html
 
   # Optimise Images
-  activate :imageoptim
+  activate :imageoptim do |opt|
+    opt.jpegoptim = { :strip => ['all'], :max_quality => 80 }
+    opt.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
+  end
 
   # Enable cache buster
   # activate :cache_buster
@@ -130,7 +133,7 @@ activate :s3_sync do |s3|
   s3.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
   s3.bucket = 'www.lastascent.com'
   s3.region = 'us-east-1'
-  s3.after_build = true
+  s3.after_build = false
 end
 
 default_caching_policy max_age:(60 * 60 * 24 * 365)
@@ -140,7 +143,7 @@ activate :cloudfront do |config|
   config.access_key_id      = ENV['AWS_ACCESS_KEY_ID']
   config.secret_access_key  = ENV['AWS_SECRET_ACCESS_KEY']
   config.distribution_id    = 'E10P6XULRJMW57'
-  config.after_build        = true
+  config.after_build        = false
 end
 
 configure :development do

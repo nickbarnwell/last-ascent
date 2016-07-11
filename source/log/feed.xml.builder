@@ -1,15 +1,15 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://ul.io/nb/"
-  xml.title "nota bene"
-  xml.subtitle "self-absorbed rambling"
+  site_url = "http://www.lastascent.com/log"
+  xml.title "Last Ascent"
+  xml.subtitle "a moderately incompetent climber's log"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
   xml.updated blog.articles.first.date.to_time.iso8601
   xml.author { xml.name "Nick Barnwell" }
 
-  blog.articles[0..5].each do |article|
+  blog.articles[0..15].each do |article|
     xml.entry do
       xml.title article.title
       xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
