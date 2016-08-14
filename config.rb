@@ -50,6 +50,7 @@ require 'stamp'
 #   end
 # end
 
+activate :sprockets
 sprockets.append_path 'last_ascent_styles'
 set :css_dir, 'stylesheets'
 
@@ -65,9 +66,9 @@ set :haml, { :ugly => true, :format => :html5 }
 
 Time.zone = "America/Los_Angeles"
 
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
-    :fenced_code_blocks => true, :smartypants => true
 set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
+    :fenced_code_blocks => true, :smartypants => true, :quote => true
 
 # page "/blog/", :layout => :blog
 page "/log/feed.xml", :layout => false
