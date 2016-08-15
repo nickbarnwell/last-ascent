@@ -23,7 +23,7 @@ We'd been hankering to climb *Outer Space* (III, 5.9) in Leavenworth for
 months, but the weather had been uncooperative. Gorgeous, sun-drenched weeks
 were repeatedly tainted by weekend downpours. Despite the fatigue from Baker,
 Peter's notice of a weather window was too much to resist. Stopping at home
-just long enough to swap crampons for climbing shoes, I set off for
+just long enough to swap crampons for climbing shoes, I left for
 Leavenworth, rack in hand and visions of pristine alpine granite in mind.
 
 Arriving past midnight, I scored a fitful night's sleep at the Snow Creek
@@ -99,7 +99,7 @@ a fun but otherwise unremarkable portion of our day.
 behind us, we were on route and eager to start one of the climb's best
 pitches. However, a party that began just after we'd completed P1 was at our
 heels, and we agreed to let them pass. That decision would haunt us, turning
-the day from a leisurely Grade III climb into a fifteen hour ordeal verging on epic.
+the day from a leisurely Grade III climb into a fifteen hour ordeal.
 
 The sun beat upon us as we waited for them to finish the pitch, *Outer
 Space*'s crux. Though they were quick off the belay, a flurry of takes had
@@ -118,7 +118,7 @@ highlight of my day.
 Pulling onto the face, the reality of my declining condition sank in. With a
 pounding head and thickening tongue, I was, for once, glad to be a top rope
 tough guy. What should have been a cruiser section felt as strenuous as
-redpointing a long-term project and so I struggled ever-upwards. Flopping onto
+redpointing a long-term project. I struggled upwards. Flopping onto
 the belay ledge, I saw Peter glance worriedly at his watch. It's
 mid-afternoon and two pitches, an arduous fourth-class descent, and an
 hour's walk separate us from the trailhead.
@@ -127,8 +127,8 @@ hour's walk separate us from the trailhead.
 
 After exchanging gear and reflaking the rope to get Peter on top, we continue.
 Though I'd been eager to take this lead, a sustained, hand-sized splitter
-flanked by chicken-heads, I was, by this point, both physically and mentally
-unfit to so.
+flanked by chicken-heads, dehydration had rendered me physically and mentally
+unfit for it.
 
 With a decade of crack experience and quadruples of #1s and #2s, Peter
 floated up the face, and it was soon my turn to follow. Slightly delirious, I
@@ -168,13 +168,13 @@ remainder of the the length promptly follows. The cry of "off belay" rains down.
 Had there been enough moisture left in my body to salivate, I would have. The
 end was near.
 
-My turn to climb. I strip the anchor in record time and bolt towards the
-crack, jamming hands and feet with wild abandon. I take full advantage of my
-top rope invincibility and power past the fingerlock that had driven Peter to
-aid. Past here it feels like easy fifth, and as I come to the bulge, visions
-of flat ground and clear mountain springs flash through my mind. Pulling over
-the top, I halt. Peter is perched at a gear anchor beneath a giant flake.
-Above him, thirty metres of slab. I pad towards the belay and clove in.
+My turn to climb. I strip the anchor in record time and bolt towards the crack,
+jamming hands and feet with wild abandon. I take full advantage of my top rope
+invincibility and power past the fingerlock that had driven Peter to aid. Past
+here it feels like easy fifth, and as I come to the bulge, visions of flat
+ground and clear mountain springs flash through my mind. Pulling over the top, I
+halt. Peter is perched at a gear anchor beneath a giant flake.  Above him,
+there's thirty metres of slab. I pad towards the belay and clove in.
 
 #### P7/5.-: I Was Told There'd Be No Runout
 
@@ -182,11 +182,11 @@ Above him, thirty metres of slab. I pad towards the belay and clove in.
 
 "You gotta lead it. I can't do a runout, not now."
 
-It's obvious to both of us that the expanse above can't be protected. The
-easiest line, up and to the right, follows a series of chicken-heads before
-transitioning into low angle slab. Apart from a small flake barely three
-metres removed from the belay, there won't be a placement until I reach the
-gravel-strewn top of Snow Creek Wall and sling a boulder.
+It's obvious to us both that the expanse above can't be protected. The easiest
+line follows a series of chicken-heads before transitioning into low angle slab.
+Aside from a small flake barely three metres from the belay, there won't be a
+placement until I reach the gravel-strewn top of Snow Creek Wall and sling a
+boulder.
 
 "OK," I concede. Though my heart's not in it, I can hardly deny his request.
 
@@ -207,19 +207,20 @@ the descent.
 
 #### What Goes Up…
 
-Just follow the cairns they said, it's obvious, they said. Not so at twilight.
+Per usual, the descent beta was patronisingly vague. "Scramble gullies at left".
 Roughly three-quarters of the way down, after a few scrapes and scree-induced
-slides, we give up and begin traversing skiier's left,
-perpendicular to the slope. We popped out of some brush and found ourselves 30' above
-a clear trail leading back to bags. Peter chooses to backtrack and
-find a less exposed route while I attempt to downclimb. A few tenuous fourth-class
-moves reunited me with our packs and stash of water; I drink an entire
-liter without pausing for air.
+slides, we gave up our cairn hunting and began traversing skiier's left,
+perpendicular to the slope. We popped out of some brush 30' above a clear trail
+leading back to our suspended bags. Peter chose to backtrack and find a less
+exposed route while I attempted to downclimb. A few tenuous fourth-class moves
+reunited me with our packs and stash of water; I drank an entire liter without
+pausing for air.
 
-Several other parties are also packing up, and we're grateful for the company
-on the hike back to the Enchantments trail. From there, we split up - they're
-significantly less tired and soon disappear into the distance. Begrudgingly,
-we pull out our headlamps and tramp back to the car in silence, finally arriving at
-quarter past ten. We're sweaty, tired, and famished. We're also victorious.
+Several other parties were also packing up, and we were grateful for the company
+on the hike back out to the Enchantments trail. From there, we split up - they
+were significantly less tired and soon disappeared into the distance. We pulled
+out our headlamps and tramped back to the trailhead in silence, finally reaching
+it around quarter past ten. Sweaty, tired, and famished, we're also victorious.
 
-Pulling away, I've only one question for Peter: "Still game for Prusik in a day?"
+As we pulled away, I had only one question for Peter: "Still game for Prusik in
+a day?"
