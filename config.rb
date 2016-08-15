@@ -67,8 +67,69 @@ set :haml, { :ugly => true, :format => :html5 }
 Time.zone = "America/Los_Angeles"
 
 set :markdown_engine, :redcarpet
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
-    :fenced_code_blocks => true, :smartypants => true, :quote => true
+class CustomMarkdown < Middleman::Extension
+  $markdown_options = {
+    autolink:           true,
+    fenced_code_blocks: true,
+    no_intra_emphasis:  true,
+    strikethrough:      true,
+    tables:             true,
+    quote:              true,
+    smartypants:        true
+  }
+
+  # Markdown files
+  def initialize(app, options_hash={}, &block)
+    super
+    app.set :markdown_engine, :redcarpet
+    app.set :markdown, $markdown_options
+  end
+
+  # HAML Markdown filter
+  module Haml::Filters
+    remove_filter("Markdown")
+
+    module Markdown
+      include Haml::Filters::Base
+
+      def render text
+        markdown.render text
+      end
+
+      class MarkdownRenderer < Redcarpet::Render::HTML
+        def block_code(code, language)
+          Middleman::Syntax::Highlighter.highlight(code.force_encoding("UTF-8"), language)
+        end
+      end
+
+      private
+
+      def markdown
+        @markdown ||= Redcarpet::Markdown.new MarkdownRenderer.new($markdown_options), $markdown_options
+      end
+    end
+  end
+
+  # TOC helper
+  helpers do
+    # Based on https://github.com/vmg/redcarpet/pull/186#issuecomment-22783188
+    def toc(page)
+      html_toc = Redcarpet::Markdown.new(Redcarpet::Render::HTML_TOC)
+      file = ::File.read(page.source_file)
+
+      # remove YAML frontmatter
+      file = file.gsub(/^(---\s*\n.*?\n?)^(---\s*$\n?)/m,'')
+
+      # quick fix for HAML: remove :markdown filter and indentation
+      file = file.gsub(/:markdown\n/,'')
+      file = file.gsub(/\t/,'')
+
+      html_toc.render file
+    end
+  end
+end
+::Middleman::Extensions.register(:custom_markdown, CustomMarkdown)
+
 
 # page "/blog/", :layout => :blog
 page "/log/feed.xml", :layout => false
