@@ -6,7 +6,7 @@ published: true
 ---
 
 
-![Snow Creek Wall from the Enchantments Trail](/log/posts/2016-07-02-escape-velocity/snow-creek-wall.jpg)
+![Snow Creek Wall from the Enchantments Trail](/log/posts/escape-velocity-2016-07-02/snow-creek-wall.jpg)
 <span class="dropcap">D</span>escending from the Mt. Baker trailhead, I turned my
 phone on with reluctance. Four days without signal guaranteed a
 cacophony of alerts once connectivity was restored. As
@@ -19,7 +19,7 @@ the week's clutter scrolled across the screen, one message stood out:
     </p>
 </blockquote>
 
-We'd been hankering to climb *Outer Space* (III, 5.9) in Leavenworth for
+ We'd been hankering to climb *Outer Space* (III, 5.9) in Leavenworth for
 months, but the weather had been uncooperative. Gorgeous, sun-drenched weeks
 were repeatedly tainted by weekend downpours. Despite the fatigue from Baker,
 Peter's notice of a weather window was too much to resist. Stopping at home
@@ -31,7 +31,7 @@ Trailhead. At dawn, we set off for the Wall. An hour's approach to the
 climbers' trail, a spate of log crossings, and a few routefinding mishaps
 brought us to the base of our objective.
 
-![Peter taking the safe approach to stream crossing](/log/posts/2016-07-02-escape-velocity/peter-crossing-log.jpg)
+![Peter taking the safe approach to stream crossing](/log/posts/escape-velocity-2016-07-02/peter-crossing-log.jpg)
 
 We racked up and hung our packs before pulling out the topo, giddy with
 anticipation of the climb to come. For Peter, it was an opportunity to work
