@@ -24,6 +24,23 @@ set :markdown,
     quote:              true,
     smartypants:        true
 
+# Hack to remove /log from list of directories ignored by listen :(
+module Listen
+  class Silencer
+    DEFAULT_IGNORED_DIRECTORIES = %r{^(?:
+      \.git
+      | \.svn
+      | \.hg
+      | \.rbx
+      | \.bundle
+      | bundle
+      | vendor/bundle
+      | tmp
+      |vendor/ruby
+    )(/|$)}x
+  end
+end
+
 class CustomMarkdown < Middleman::Extension
   $markdown_options = {
     autolink:           true,
@@ -91,9 +108,9 @@ page "/log/feed.xml", :layout => false
 page "/feed.xml", :proxy => "/log/feed.xml", :layout => false
 
 activate :blog do |blog|
-  #blog.prefix = "log"
+  blog.prefix = "log"
   # blog.permalink = ":year/:month/:day/:title.html"
-  blog.sources = "log/posts/:year-:month-:day-:title.html"
+  blog.sources = "/posts/:title-:year-:month-:day.html"
   # blog.taglink = "tags/:tag.html"
   blog.layout = "post"
   blog.summary_separator = /(READMORE)/
