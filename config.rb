@@ -1,6 +1,20 @@
 require 'sass'
 require 'stamp'
 
+Listen::Silencer.send(:remove_const, :DEFAULT_IGNORED_DIRECTORIES)
+Listen::Silencer.const_set(:DEFAULT_IGNORED_DIRECTORIES,
+  %r{^(?:
+    \.git
+    | \.svn
+    | \.hg
+    | \.rbx
+    | \.bundle
+    | bundle
+    | vendor/bundle
+    | tmp
+    |vendor/ruby
+  )(/|$)}x)
+
 activate :sprockets
 sprockets.append_path 'last_ascent_styles'
 
@@ -24,22 +38,6 @@ set :markdown,
     quote:              true,
     smartypants:        true
 
-# Hack to remove /log from list of directories ignored by listen :(
-module Listen
-  class Silencer
-    DEFAULT_IGNORED_DIRECTORIES = %r{^(?:
-      \.git
-      | \.svn
-      | \.hg
-      | \.rbx
-      | \.bundle
-      | bundle
-      | vendor/bundle
-      | tmp
-      |vendor/ruby
-    )(/|$)}x
-  end
-end
 
 class CustomMarkdown < Middleman::Extension
   $markdown_options = {
