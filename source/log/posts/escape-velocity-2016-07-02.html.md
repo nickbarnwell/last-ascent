@@ -31,6 +31,8 @@ Trailhead. At dawn, we set off for the Wall. An hour's approach to the
 climbers' trail, a spate of log crossings, and a few routefinding mishaps
 brought us to the base of our objective.
 
+READMORE
+
 ![Peter taking the safe approach to stream crossing](/log/posts/escape-velocity-2016-07-02/peter-crossing-log.jpg)
 
 We racked up and hung our packs before pulling out the topo, giddy with
@@ -46,7 +48,6 @@ and try the start recommended in the Herrington guidebook. At 09:25, we
 began on *Remorse*. When we arrived at the car thirteen hours later, our
 hearts were full of it.
 
-READMORE
 
 #### P1/5.0: Stoke High
 
