@@ -11,10 +11,10 @@ style="max-width: 60%; margin: 0 auto; display: block;"/>
 
 <span class="dropcap">T</span>ook a hiatus from aggravating my patellar
 tendonitis and my physical therapist over Labour Day weekend and headed to
-Tieton for some cragging with Peter. 
+Tieton for some trad climbing with Peter. 
 
-We'd climbed Sahale together earlier this year and had a great time, but wanted
-to climb together before attempting high commitment alpine routes later
+We'd done Sahale together earlier this year and had a great time, but wanted
+to crag together before attempting high commitment alpine routes later
 this season (Weather Gods permitting 🙏). Though our sport and bouldering grades
 are a ways apart, throw us both on hand crack and you'd pick him as the stronger
 climber every time!
