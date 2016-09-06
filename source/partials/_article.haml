@@ -6,10 +6,10 @@
     /    %li.post-tag= link_to t, tag_path(t)
     .post-date= article.date.stamp("5th September, 2013")
   .post-summary.post-body
-    - if !article.data.summarize || (full_article ||= false)
-      = article.body
-    - else
+    - if article.data.summarize.nil? || article.data.summarize
       = article.summary
       - if article.summary != article.body
         = link_to 'Read On&hellip;', article, :class => 'post-read-more'
+    - else
+      = article.body
 
