@@ -6,7 +6,7 @@
     /    %li.post-tag= link_to t, tag_path(t)
     .post-date= article.date.stamp("5th September, 2013")
   .post-summary.post-body
-    - if full_article ||= false
+    - if !article.data.summarize || (full_article ||= false)
       = article.body
     - else
       = article.summary
